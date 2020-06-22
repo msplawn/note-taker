@@ -4,12 +4,17 @@
 For this project I modified existing code to create a CLI driven application that prompts a manager to create cards for all relevant team members and display them in a relevant way. Managers can create a team via the required classes the build their team and render it to an HTML file. All classes are required to pass tests to validate them.
 
 # **Screencaps:**
-![Code](./assets/invscode.png)
+![Landing Page](./develop/assets/landingpage.png)
 
-![Code](./assets/inbrowser.png)
+![Note Page](./develop/assets/notepage.png)
+
+![New Note](./develop/assets/newnote.png)
+
+![Saved Note](./develop/assets/savednote.png)
+
 
 # **Demo Video:**
-[https://drive.google.com/file/d/1Rp3A5gqIXETpRQcXIrvwFpsWsMaiew4w/view]
+[https://drive.google.com/file/d/1NzbxGdJN0Fawj2sG9XTBcikG1f2O3XWR/view]
 
 # **Installation**
 Download the zip file and unzip it. Open the files and run npm install to intall the required dependencies. Then run node app and answer the prompted questions. Upon completion check the output folder to view the team.html file in your browser.
