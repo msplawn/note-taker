@@ -4,13 +4,13 @@
 For this project I modified existing code to create a CLI driven application that prompts a manager to create cards for all relevant team members and display them in a relevant way. Managers can create a team via the required classes the build their team and render it to an HTML file. All classes are required to pass tests to validate them.
 
 # **Screencaps:**
-![Landing Page](./develop/assets/landingpage.png)
+![Landing Page](./Develop/Assets/landingpage.png)
 
-![Note Page](./develop/assets/notepage.png)
+![Note Page](./Develop/Assets/notepage.png)
 
-![New Note](./develop/assets/newnote.png)
+![New Note](./Develop/Assets/newnote.png)
 
-![Saved Note](./develop/assets/savednote.png)
+![Saved Note](./Develop/Assets/savednote.png)
 
 
 # **Demo Video:**
