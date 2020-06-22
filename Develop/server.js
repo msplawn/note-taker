@@ -41,8 +41,6 @@ app.post("/api/notes", (req, res) => {
   try {
     // reads the json file
     notesData = fs.readFileSync("./db/db.json", "utf8");
-    console.log(notesData);
-
     // parse the data to get an array of objects
     notesData = JSON.parse(notesData);
     // Set new notes id
