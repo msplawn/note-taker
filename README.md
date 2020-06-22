@@ -10,7 +10,7 @@ For this project I built an note taking application. I used an express backend t
 
 ![New Note](./Develop/Assets/newnote.png)
 
-![Saved Note](./Develop/Assets/savednote.png)
+![Saved Note](./Develop/Assets/savenote.png)
 
 
 # **Demo Video:**
