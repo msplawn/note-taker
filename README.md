@@ -29,7 +29,7 @@ Download the zip file and unzip it. Open the files and run npm install to intall
 * Express
 
 # **Contact**
-* ### **Name:**  Morgan Splawn @msplawn
+* ### **Name:**  Morgan Splawn
 * ### **Github:**  [@msplawn](https://github.com/msplawn)
 * ### **Email:**  [mmsplawn@gmail.com](msplawn@gmail.com)
 * ### **LinkedIn:**  [https://www.linkedin.com/in/morgan-splawn-72979a1a9/](https://www.linkedin.com/in/morgan-splawn-72979a1a9/)
