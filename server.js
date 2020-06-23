@@ -17,14 +17,14 @@ app.use(express.json());
 // =============================================================
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "./public")));
+app.use(express.static(path.join(__dirname, "./develop/public")));
 
 // Set up routes
 // =============================================================
 app.get("/api/notes", (err, res) => {
   try {
     // reads the notes from json file
-    notesData = fs.readFileSync("./db/db.json", "utf8");
+    notesData = fs.readFileSync("./develop/db/db.json", "utf8");
     // parse it so notesData is an array of objects
     notesData = JSON.parse(notesData);
 
@@ -40,7 +40,7 @@ app.get("/api/notes", (err, res) => {
 app.post("/api/notes", (req, res) => {
   try {
     // reads the json file
-    notesData = fs.readFileSync("./db/db.json", "utf8");
+    notesData = fs.readFileSync("./develop/db/db.json", "utf8");
     // parse the data to get an array of objects
     notesData = JSON.parse(notesData);
     // Set new notes id
@@ -50,7 +50,7 @@ app.post("/api/notes", (req, res) => {
     // make it string(stringify)so you can write it to the file
     notesData = JSON.stringify(notesData);
     // writes the new note to file
-    fs.writeFile("./db/db.json", notesData, "utf8", function(err) {
+    fs.writeFile("./develop/db/db.json", notesData, "utf8", function(err) {
       // error handling
       if (err) throw err;
     });
@@ -67,7 +67,7 @@ app.post("/api/notes", (req, res) => {
 app.delete("/api/notes/:id", (req, res) => {
   try {
     //  reads the json file
-    notesData = fs.readFileSync("./db/db.json", "utf8");
+    notesData = fs.readFileSync("./develop/db/db.json", "utf8");
     // parse the data to get an array of the objects
     notesData = JSON.parse(notesData);
     // delete the old note from the array on note objects
@@ -77,7 +77,7 @@ app.delete("/api/notes/:id", (req, res) => {
     // make it string(stringify)so you can write it to the file
     notesData = JSON.stringify(notesData);
     // write the new notes to the file
-    fs.writeFile("./db/db.json", notesData, "utf8", function(err) {
+    fs.writeFile("./develop/db/db.json", notesData, "utf8", function(err) {
       // error handling
       if (err) throw err;
     });
@@ -93,15 +93,15 @@ app.delete("/api/notes/:id", (req, res) => {
 });
 
 app.get("/notes", (req, res) => {
-  res.sendFile(path.join(__dirname, "/public/notes.html"));
+  res.sendFile(path.join(__dirname, "./develop/public/notes.html"));
 });
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
+  res.sendFile(path.join(__dirname, "./develop/public/index.html"));
 });
 
 app.get("/api/notes", (req, res) => {
-  return res.sendFile(path.json(__dirname, "./db/db.json"));
+  return res.sendFile(path.json(__dirname, "./develop/db/db.json"));
 });
 
 // Starts the server to begin listening
